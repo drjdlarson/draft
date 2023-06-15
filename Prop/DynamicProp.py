@@ -13,7 +13,7 @@ from Prop import getDownloadedFiles
 import numpy
 import webbrowser 
 
-class PropWindow(QMainWindow):
+class DynamicPropWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 

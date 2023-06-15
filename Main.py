@@ -35,7 +35,7 @@ from PyQt5.QtGui import QPalette, QColor
 from pyqtgraph import PlotWidget
 import pyqtgraph
 import openvsp as vsp
-from Prop import PropMain
+from Prop import DynamicProp
 
 # Main Window Subclass: defines main layout 
 class MainWindow(QMainWindow):
@@ -45,7 +45,7 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("DRAFT - Design Resource for Airborne Flight Technology")
         self.setMinimumSize(1000,600)
 
-        self.PropSection = PropMain.PropWindow()
+        self.PropSection = DynamicProp.DynamicPropWindow()
 
         layout = QHBoxLayout()
 
